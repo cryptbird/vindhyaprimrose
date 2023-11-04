@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primrose New</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- POPUP FORM CSS -->
+<style>
+    @import "https://fonts.googleapis.com/css?family=Raleway";
+
+    #popupform {
+      top: 45%;
+      left: 50%;
+      display: none;
+      z-index: 999;
+      position: fixed;
+      width: 50vh;
+      background-image: url('/assets/images/bluesky.jpg');
+      opacity: 1;
+      border-radius: 20px;
+      font-weight: 500;
+      font-family: Raleway;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%)
+    }
+
+    .popupformhead {
+      padding-top: 5%;
+      flex-wrap: wrap;
+      padding-left: 2.5%;
+      padding-right: 2.5%;
+    }
+
+    .popupformcon {
+      margin-top: 5%;
+      padding-left: 10px;
+    }
+
+    .popupforminput {
+      margin-top: 15px;
+      border-radius: 15px;
+      border: 1px solid #eeeeee;
+      color: #aaaaaa;
+      padding: 3px;
+      height: 25px;
+      padding-left: 10px;
+      width: 90%;
+    }
+
+    .popupformsubmit {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 50px;
+      border: 1px solid blue;
+      background-color: white;
+      width: 100px;
+
+    }
+
+    .popupformsubmit:hover {
+      background-color: aqua;
+      color: white;
+      border: 1px solid white;
+    }
+
+    @media (max-width:500px) {
+      #popupform {
+        top: 45%;
+        left: 50%;
+        display: none;
+        z-index: 999;
+        position: fixed;
+        width: 70vw;
+        background-image: url('/assets/images/bluesky.jpg');
+        opacity: 1;
+        border-radius: 20px;
+        font-weight: 500;
+        font-family: Raleway;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%)
+      }
+    }
+
+    .popupsidebut {
+      float: right;
+      margin-right: 0px;
+      font-family: Raleway;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      /* float: right; */
+      width: 40px;
+      color: white;
+      border-radius: 0 5px 5px 0;
+      background-color: #aee0f9;
+      writing-mode: vertical-lr;
+      z-index: 999;
+      position: fixed;
+      top: 50vh;
+      padding-left: 5px
+    }
+  </style>
+  <!-- POPUP FORM CSS END -->
+  <style>
+    @import "https://fonts.googleapis.com/css?family=Raleway";
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Raleway;
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+
+    #contactForm2 {
+
+      display: none;
+      z-index: 999;
+      text-align: center;
+      background: transparent;
+      position: fixed;
+      top: 45%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%)
+    }
+
+    input,
+    textarea {
+      margin: .8em auto;
+      font-family: inherit;
+      text-transform: inherit;
+      font-size: inherit;
+
+      display: block;
+      width: 280px;
+      padding: .4em;
+    }
+
+    textarea {
+      height: 80px;
+      resize: none;
+    }
+
+    .formBtn {
+      width: 140px;
+      display: inline-block;
+
+      background: teal;
+      color: #fff;
+      font-weight: 100;
+      font-size: 1.2em;
+      border: none;
+      height: 30px;
+    }
+  </style>
+
+  <!-- Landscape Picture CSS Start -->
+
+  <style>
+    .landscape{
+        background-image: url(/assets/images/nightopaque.png);
+        background-size: cover;
+        height: 90vh;
+        padding-left: 10vw;
+        padding-top: 30vh;
+        
+        
+    }
+  </style>
+
+  <!-- Landscape Picture CSS End -->
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-digimedia-v3.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+
+</head>
+<body>
+    
+
+    <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+
+  <!-- Pre-header Starts -->
+  <div class="pre-header" style="background-color: #026ec1;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8 col-7">
+          <ul class="info">
+            <li><a href="#" style="color: white;"><i class="fa fa-envelope"></i>marketing@vindhyarealty.com</a></li>
+            <li><a href="tel:+919073974181" style="color: white;"><i class="fa fa-phone"></i>+91 90739 74181</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-5">
+          <ul class="social-media">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.instagram.com/vindhyaa_group?igshid=MzMyNGUyNmU2YQ%3D%3D"><i
+                  class="fa fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pre-header End -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/Primrose_Logo.png" height="50vh" alt="">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#top">About</a></li>
+              <li class="scroll-to-section"><a href="#about">Specifications</a></li>
+              <li class="scroll-to-section"><a href="#about">Amenities</a></li>
+              <li class="scroll-to-section"><a href="#services">Plans</a></li>
+              <li class="scroll-to-section"><a href="#portfolio">Const. Status</a></li>
+              <li class="scroll-to-section">
+                <div class="border-first-button"><a
+                    href="https://drive.google.com/file/d/10uHlcJHND6-w2FpgR17k42yDZacj2M1h/view?usp=drive_link">Download
+                    Brochure</a></div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  <!-- Pop Up Button Start -->
+  <a href="" onclick="pop();">
+    <div class="popupsidebut">
+      <center>
+        Get Quote
+      </center>
+    </div>
+  </a>
+  <!-- Pop Up Button End -->
+  <!-- Pop Up Start -->
+  <div id="popupform">
+    <div class="popupformhead">
+
+      <center>
+        <img src="/assets/images/Primrose_Logo.png" style="width: 100px;" alt=""><br><br>
+        SEND YOUR QUERIES AND GET A QUOTE
+      </center>
+    </div>
+    <div class="popupformcon">
+      <input class="popupforminput" type="text" id="name" placeholder="Name"><br>
+      <input class="popupforminput" type="number" id="number" placeholder="Number"><br>
+      <input class="popupforminput" type="email" name="email" id="email" placeholder="Email"><br>
+      <select class="popupforminput" name="interested" id="interested in">
+        <option value="Interested In">Interested In</option>
+        <option value="2BHK" style="color: black;">2BHK</option>
+        <option value="3BHK" style="color: black;">3BHK</option>
+      </select>
+      <center>
+        <a href="mailto:marketing@vindhyarealty.com">
+          <input type="submit" name="submit" class="popupformsubmit">
+        </a>
+      </center>
+    </div>
+  </div>
+  <!-- POP UP SCRIPT START -->
+  <script>
+    $(document).ready(function () {
+      // Automatically show the popup after 5 seconds of screen reload
+      setTimeout(function () {
+        $('#popupform').fadeIn();
+      }, 3000);
+
+      // Hide the popup when clicking anywhere else on the screen
+      $(document).mouseup(function (e) {
+        var container = $("#popupform");
+
+        if (!container.is(e.target) // if the target of the click isn't the container...
+          && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+          container.fadeOut();
+        }
+      });
+      $(document).scroll(function () {
+        $('#popupform').fadeOut();
+      });
+
+
+    });
+    function pop() {
+      $(document).ready(function () {
+        // Automatically show the popup after 5 seconds of screen reload
+        setTimeout(function () {
+          $('#popupform').fadeIn();
+        }, 3000);
+
+        // Hide the popup when clicking anywhere else on the screen
+        $(document).mouseup(function (e) {
+          var container = $("#popupform");
+
+          if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+          {
+            container.fadeOut();
+          }
+        });
+
+      });
+    }
+  </script>
+<!-- POP UP SCRIPT END -->
+<!-- POP UP END -->
+
+<!-- Landscape Picture Start -->
+<div class="landscape">
+
+
+   <span style="font-size: 48px;
+   font-family: Raleway;
+   font-weight:900;
+   color: #aacd95;"> The Eternal <br> Spring Life </span><br>
+    <span style="color: white; font-weight:900; font-size: 48px;
+    font-family: Raleway;"> Vindhya Primrose</span>
+    <br>
+   <span style="color: white; font-size: large;"> project Area : 40000 sq ft <br>
+    No. of Floors: G+4</span>
+</div>
+<!-- Landscape Picture End -->
+<!-- About Starts -->
+<div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h6 style="color: #026ec1;">The Eternal Spring Life</h6>
+                    <h2>Vindhya Primrose</h2>
+                    <p style="color: black; ">Project Area : 40000 sq ft <br>
+                      No. of Floors: G+4 <br>
+                        <span style="text-transform: capitalize;"> 
+                        <b>Spring brings freshness in nature, new leaves, new flowers.
+                        the whole atmosphere looks in total bliss.At Vindhya Primrose,
+                        your daily life is enveloped in spring. With like-minded society,
+                        less crowded units, updated features, and away from the city's
+                        hustle-bustle yet close to the main city, Vindhya Primrose makes
+                        your living happy and peaceful.</b> </span>
+                    </p>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="border-first-button scroll-to-section">
+                      <a href="https://drive.google.com/file/d/10uHlcJHND6-w2FpgR17k42yDZacj2M1h/view?usp=drive_link"
+                        style="text-align: center;">Download Brochure</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/primrose_building2.jpg" style="border-radius: 15px;" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- About Ends -->
+<!-- Specifications Starts -->
+
+<div class="main-banner wow fadeIn" id="top1" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              
+
+                <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <h6 style="color: #026ec1;">Vindhya Primrose</h6>
+                        <h2>Specifications</h2>
+                            <span style="text-transform: capitalize;"> 
+                            <b>&#8226; Foundation: </b>  <br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &#11037; Earthquake resistant reinforced concrete cement structure <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037; External wall: All guard water proof base paint <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037; Internal Wall:  Wall Putty <br> 
+                                
+                            <b>&#8226; Door: </b> <br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &#11037; Main Door - Flush door with one side teak finish <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Main door fittings <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Internal Doors - Flush doors with oil paint <br>
+                                
+                               <b> &#8226; Windows: </b> <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Anodized aluminium sliding windows <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Grill option at extra cost <br>
+                                
+                               <b> &#8226; Flooring: </b> <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Vitrified tiles in entire flat <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Kitchen & Toilet with anti-skid Ceramic tiles <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Staircase with half landing granite balance kota/marble <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Lobby with Vitrified tiles <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Lift fascia of Granite tiles <br>
+                                
+                                <b> &#8226; Lift: </b>
+                                5 passenger semi-automatic (reputed make)</b> 
+                               </span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                
+
+
+
+            </div>
+            <div class="col-lg-6">
+                
+                <!-- <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <img src="assets/images/primrose_building2.jpg" style="border-radius: 15px;" alt="">
+                  </div>
+                 -->
+                 <br><br><br><br><br>
+                 <span style="text-transform: capitalize;">
+                 <b> &#8226; Kitchen: </b> <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Granite counter <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Stainless steel sink <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Dado of Ceramic tiles upto 3 ft. above the counter platform <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Electrical point for refrigerator, water purifier, microwave <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;chimney or exhaust fan <br>
+                                
+                               <b> &#8226; Toilet: </b> <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Dado glazed tiles on the walls upto door level <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Premium quality sanitary and CP fittings (reputed make) <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Electrical point for geyser and exhaust fan <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Plumbing provision for hot/cold water line <br>
+                                
+                               <b> &#8226; Electricals: </b> <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Concealed copper wiring with central MCB (reputed make) <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Modular switches (reputed make) <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Sufficient number of plug points <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Provision for split AC points <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Provisions for cable TV, telephone + broadband wiring <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &#11037;Door bell point at main entrance <br>
+                                
+                               
+
+                            </span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Specifications Ends -->
+
+<!-- Amenities Starts -->
+
+<div id="about" class="about section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <!-- <div class="col-lg-6">
+              <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/Top_Cam1_Rev_Final.jpg" style="border-radius: 15px;" alt="">
+              </div>
+            </div> -->
+            <div class="col-lg-12 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="about-right-content">
+                <div class="section-heading">
+                  <h6 style="color: #026ec1;">Vidhya Primrose</h6>
+                  <h4>Project Specifications And <em style="color: #026ec1;">Amenities</em></h4>
+                  <div class="line-dec" style="background-color: #026ec1;"></div>
+                </div>
+                <br>
+                <!-- <p>We hope this DigiMedia template is useful for your work. You can use this template for any purpose. You may <a rel="nofollow" href="http://paypal.me/templatemo" target="_blank">contribute a little amount</a> via PayPal to <a href="https://templatemo.com/contact" target="_blank">support TemplateMo</a> in creating new templates regularly.</p> -->
+                <div class="row">
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                      <div class="progress" data-percentage="100">
+                        <span class="progress-left">
+                          <span class="progress-bar" style="border-color:#b0d9e7;"></span>
+                        </span>
+                        <span class="progress-right">
+                          <span class="progress-bar" style="border-color:#b0d9e7;"></span>
+                        </span>
+                        <div class="progress-value">
+                          <div>
+                            <!-- 90% -->
+                            <img src="/assets/images/Children'sPlayCourt.png" height="40vh" style="width: 3vw;">
+                            <br>
+                            <span style="color: black;">Children's Play Court</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                      <div class="progress" data-percentage="100">
+                        <span class="progress-left">
+                          <span class="progress-bar" style="border-color:#b0d9e7;"></span>
+                        </span>
+                        <span class="progress-right">
+                          <span class="progress-bar" style="border-color:#b0d9e7;"></span>
+                        </span>
+                        <div class="progress-value">
+                          <div>
+                            <!-- 80% -->
+                            <img src="/assets/images/MultiPurposeCourt.png" height="40vh" style="width: 3vw;">
+                            <br>
+                            <span style="color: black;">Multi Purpose Court</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                      <div class="progress" data-percentage="100">
+                        <span class="progress-left">
+                          <span class="progress-bar" style="border-color:#b0d9e7;"></span>
+                        </span>
+                        <span class="progress-right">
+                          <span class="progress-bar" style="border-color:#b0d9e7;"></span>
+                        </span>
+                        <div class="progress-value">
+                          <div>
+                            <!-- 80% -->
+                            <img src="/assets/images/Turf.png" height="40vh" style="width: 3vw;">
+                            <br>
+                            <span style="color: black;">Turf</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                      <div class="progress" data-percentage="100">
+                        <span class="progress-left">
+                          <span class="progress-bar" style="border-color:#476ee2;"></span>
+                        </span>
+                        <span class="progress-right">
+                          <span class="progress-bar" style="border-color:#476ee2;"></span>
+                        </span>
+                        <div class="progress-value">
+                          <div>
+                            <!-- 90% -->
+                            <img src="/assets/images/WalkingTrail.png" height="40vh" style="width: 3vw;">
+                            <br>
+                            <span style="color: black;">Walking Trail</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                      <div class="progress" data-percentage="100">
+                        <span class="progress-left">
+                          <span class="progress-bar" style="border-color:#476ee2;"></span>
+                        </span>
+                        <span class="progress-right">
+                          <span class="progress-bar" style="border-color:#476ee2;"></span>
+                        </span>
+                        <div class="progress-value">
+                          <div>
+                            <!-- 80% -->
+                            <img src="/assets/images/YogaDeck.png" height="40vh" style="width: 3vw;">
+                            <br>
+                            <span style="color: black;">Yoga Deck</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                      <div class="progress" data-percentage="100">
+                        <span class="progress-left">
+                          <span class="progress-bar" style="border-color:#476ee2;"></span>
+                        </span>
+                        <span class="progress-right">
+                          <span class="progress-bar" style="border-color:#476ee2;"></span>
+                        </span>
+                        <div class="progress-value">
+                          <div>
+                            <!-- 80% -->
+                            <img src="/assets/images/ZenGarden.png" height="40vh" style="width: 3vw;">
+                            <br>
+                            <span style="color: black;">Zen Garden</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                      <div class="progress" data-percentage="100">
+                        <span class="progress-left">
+                          <span class="progress-bar" style="border-color:#080884;"></span>
+                        </span>
+                        <span class="progress-right">
+                          <span class="progress-bar" style="border-color:#080884;"></span>
+                        </span>
+                        <div class="progress-value">
+                          <div>
+                            <!-- 90% -->
+                            <img src="/assets/images/CarParking.png" height="40vh" style="width: 3vw;">
+                            <br>
+                            <span style="color: black;">Car Parking</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                      <div class="progress" data-percentage="100">
+                        <span class="progress-left">
+                          <span class="progress-bar" style="border-color:#080884;"></span>
+                        </span>
+                        <span class="progress-right">
+                          <span class="progress-bar" style="border-color:#080884;"></span>
+                        </span>
+                        <div class="progress-value">
+                          <div>
+                            <!-- 80% -->
+                            <img src="/assets/images/FireFighting.png" height="40vh" style="width: 3vw;">
+                            <br>
+                            <span style="color: black;">Firefighting Equipments</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                    <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                      <div class="progress" data-percentage="100">
+                        <span class="progress-left">
+                          <span class="progress-bar" style="border-color:#080884;"></span>
+                        </span>
+                        <span class="progress-right">
+                          <span class="progress-bar" style="border-color:#080884;"></span>
+                        </span>
+                        <div class="progress-value">
+                          <div>
+                            <!-- 80% -->
+                            <img src="/assets/images/cctv A.png" height="40vh" style="width: 3vw;">
+                            <br>
+                            <span style="color: black;">CCTV</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Amenities Ends -->
+
+<!-- Project Details Starts -->
+<div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h6 style="color: #026ec1;">Project Details</h6>
+            <h4>What <em style="color: #026ec1;">Vidhya Primrose</em> Provides</h4>
+            <div class="line-dec" style="background-color: #026ec1;"></div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images//building.png" alt=""></span>
+                        Project Images
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/masterplan.png" alt=""></span>
+                        Master &amp; Plans
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/floorplan.png" alt=""></span>
+                        Floor Plans
+                      </div>
+                    </div>
+                    <div>
+                      <!-- <div class="thumb">
+                        <span class="icon"><img src="assets/images/mapicon.png" alt=""></span>
+                        Location
+                      </div> -->
+                    </div>
+                    <!-- <div class="last-thumb">
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
+                        Traveling
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <img src="assets/images/Night01.jpg" style="border-radius: 15px; margin-bottom: 5px;"
+                                alt="">
+                              <img src="assets/images/primrose_building2.jpg"
+                                style="border-radius: 15px; margin-bottom: 5px;" alt="">
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/Top_Cam1_Rev_Final.jpg"
+                                  style="border-radius: 15px; margin-bottom: 5px;" alt="">
+                                <img src="assets/images/primroseconstruction.jpg"
+                                  style="border-radius: 15px; margin-bottom: 5px;" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <img src="assets/images/masterplannewprimrose.jpg" style="border-radius: 15px; margin-bottom: 5px;"
+                              alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+
+                              <img src="assets/images/floorplan1.png" style="border-radius: 15px; margin-bottom: 5px;"
+                                alt="">
+                              <img src="assets/images/floorplan2.png" style="border-radius: 15px; margin-bottom: 5px;"
+                                alt="">
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+
+                              <img src="assets/images/floorplan3.png" style="border-radius: 15px; margin-bottom: 5px;"
+                                alt="">
+                              <!-- <img src="assets/images/primroseconstruction.jpg" style="border-radius: 15px; margin-bottom: 5px;" alt=""> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div style="width: 100%; border-radius: 15px;"><iframe width="100%" height="600"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=CCG4+259,%20Vidhya%20Primrose,%20Narendrapur,%20Kolkata,%20West%20Bengal%20700150+(Vindhya%20Primrose)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                  href="https://www.maps.ie/population/">Population mapping</a></iframe></div>
+                          </div>
+                        </div>
+                      </div>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Project Details Ends -->
+
+<!-- Construction Status Starts -->
+<div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h1 style="color: #026ec1;">Construction Status</h1>
+            <!-- <h4>What <em style="color: #026ec1;">Vidhya Primrose</em> Provides</h4> -->
+            <div class="line-dec" style="background-color: #026ec1;"></div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/calendar1.jpg" alt=""></span>
+                        July '23
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/calendar1.jpg" alt=""></span>
+                        Oct '23
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/calendar1.jpg" alt=""></span>
+                        Jan '24
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/calendar1.jpg" alt=""></span>
+                        Apr '24
+                      </div>
+                    </div>
+                    <!-- <div class="last-thumb">
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
+                        Traveling
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <img src="assets/images/foundationbuild.jpg" style="border-radius: 15px; margin-bottom: 5px;"
+                                alt="">
+                              <img src="assets/images/foundationsettle.jpg"
+                                style="border-radius: 15px; margin-bottom: 5px;" alt="">
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/Top_Cam1_Rev_Final.jpg"
+                                  style="border-radius: 15px; margin-bottom: 5px;" alt="">
+                                <img src="assets/images/primroseconstruction.jpg"
+                                  style="border-radius: 15px; margin-bottom: 5px;" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <img src="assets/images/foundationbuild.jpg" style="border-radius: 15px; margin-bottom: 5px;"
+                              alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+
+                              <img src="assets/images/foundationsettle.jpg" style="border-radius: 15px; margin-bottom: 5px;"
+                                alt="">
+                              <img src="assets/images/primroseconstruction.jpg" style="border-radius: 15px; margin-bottom: 5px;"
+                                alt="">
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+
+                              <img src="assets/images/Sparsh_Foundation1.jpg" style="border-radius: 15px; margin-bottom: 5px;"
+                                alt="">
+                              <!-- <img src="assets/images/primroseconstruction.jpg" style="border-radius: 15px; margin-bottom: 5px;" alt=""> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+
+                                <img src="assets/images/foundationsettle.jpg" style="border-radius: 15px; margin-bottom: 5px;"
+                                  alt="">
+                                <img src="assets/images/primroseconstruction.jpg" style="border-radius: 15px; margin-bottom: 5px;"
+                                  alt="">
+                              </div>
+                              <div class="col-lg-6 align-self-center">
+  
+                                <img src="assets/images/Sparsh_Foundation1.jpg" style="border-radius: 15px; margin-bottom: 5px;"
+                                  alt="">
+                                <!-- <img src="assets/images/primroseconstruction.jpg" style="border-radius: 15px; margin-bottom: 5px;" alt=""> -->
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Construction Status Ends -->
+
+<!-- Contact Us Starts -->
+<div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h6 style="color: #026ec1;">Contact Us</h6>
+            <h4>Get In Touch With Us <em style="color: #026ec1;">Now</em></h4>
+            <div class="line-dec" style="background-color: #026ec1;"></div>
+          </div>
+        </div>
+        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="contact-dec">
+                  <img src="assets/images/contact-dec-v3.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div id="map">
+                  <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=CCG4+259,%20Vidhya%20Primrose,%20Narendrapur,%20Kolkata,%20West%20Bengal%20700150+(Vindhya%20Primrose)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                      href="https://www.maps.ie/population/">Population mapping</a></iframe>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="fill-form">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="info-post">
+                        <div class="icon">
+                          <img src="assets/images/phone-icon.png" alt="">
+                          <a href="tel:+919073974181" style="font-size: xx-small;">+91 90739 74181</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="info-post">
+                        <div class="icon">
+                          <img src="assets/images/email-icon.png" alt="">
+                          <a href="#" style="font-size: xx-small;">marketing@vindhyarealty.com</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="info-post">
+                        <div class="icon">
+                          <img src="assets/images/location-icon.png" alt="">
+                          <a href="#" style="font-size: xx-small;">Dakshin Jagaddal, Narendrapur, Kolkata</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                      </fieldset>
+                      <fieldset>
+                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
+                          required="">
+                      </fieldset>
+                      <fieldset>
+                        <input type="subject" name="subject" id="subject" placeholder="Phone" autocomplete="on">
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <textarea name="message" type="text" class="form-control" id="message" placeholder="Message"
+                          required=""></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="main-button " onclick="sendmail();">Send Message
+                          Now</button>
+                      </fieldset>
+                    </div>
+                    <script>
+                      function sendmail() {
+                        var name = document.getElementById("name").value;
+                        var email = document.getElementById("email").value;
+                        var subject = document.getElementById("subject").value;
+                        var message = document.getElementById("message").value;
+                        window.location.href = "mailto:marketing@vindhyarealty.com?subject=" + subject.replace(/ /g, "%20") + "&body=" + name.replace(/ /g, "%20") + "%3A%20%0D%0A" + email.replace(/ /g, "%20") + "%3A%20%0D%0A" + subject.replace(/ /g, "%20") + "%3A%20%0D%0A" + message.replace(/ /g, "%20") + "%3A%20";
+                        window.location.href = "homepage_3.html";
+                      }
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer Starts -->
+  <footer style=" width: 100%; background-color: #aee0f9"; >
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-3">
+            <img src="/assets/images/Vindhya_Logo_without_Background.png" alt="">
+         
+
+        </div>
+        <div class="col-lg-3">
+            <br><br><br> <br>
+            <span style="color: white; text-transform: capitalize;"> <b> Address: </b> <br>
+                Vindhya Sparsh- 133 Dwarir Road, Dhamaitala <br>
+                Kolkata - 700151 <br>
+                Vindhya primrose - 165 Dr. BC Roy Road, Rajpur, Kolkata 700151 <br>
+                <b>Contact: </b>+91 90739 74181 <br>
+                <br>
+            </span>
+       
+
+        </div>
+        <div class="col-lg-3">
+            <br><br><br> <br>
+            <span>      <a style="color: white; text-decoration: underline;" href="#top"> </a> <br>
+                <a style="color: white; text-decoration: underline;" href="#top1">  </a> <br>
+                       <a style="color: white; text-decoration: underline;" href="#top"> About </a> <br>
+                       <a style="color: white; text-decoration: underline;" href="#top1"> Specification </a> <br>
+                       <a style="color: white; text-decoration: underline;" href="#about"> Amenities </a> <br>
+                       <a style="color: white; text-decoration: underline;" href="#services"> Project Details </a> <br>
+                       <a style="color: white; text-decoration: underline;" href="#contact"> Location </a> <br>
+            </span>
+       
+
+        </div>
+        <div class="col-lg-3">
+            <br><br><br> <br> <br><br>
+            <ul class="social-media" style="display: flex;">
+                <li><a style="color: white;" href="#"><i class="fa fa-facebook"></i></a></li> &nbsp; &nbsp; 
+                <li><a style="color: white;" href="#"><i class="fa fa-instagram"></i></a></li> &nbsp;&nbsp;
+                <li><a style="color: white;" href="https://www.instagram.com/vindhyaa_group?igshid=MzMyNGUyNmU2YQ%3D%3D"><i
+                      class="fa fa-twitter"></i></a></li>
+              </ul>  
+          </div>
+      </div>
+    </div>
+  </footer>
+<!-- Footer Ends -->
+<!-- Contact Us Ends -->
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
