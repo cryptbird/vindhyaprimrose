@@ -1,0 +1,40 @@
+#SParsh:-
+Feel Of Happiness -> Remove from Landscape
+Download brochure-> NUmber
+remove project sparsh
+Amenities
+remove What it provides
+center aligned plans
+carousel for floor plan 
+master Plan
+Primrose-> Sparsh
+Consistent size of images
+remove 4th image of project images
+HEADING SIZE SAME
+Construction status to-> JULY'23 SEP'23 NOV'23
+Number and email size increase in contact us form
+make form in loop for popping up after every 15 seconds
+sparsh logo increase 
+landscape carousel
+footer needs improvement (Take guide from Merlin Avana)
+Sub HEading Remove
+KEEP AMENITIES CIRCLE SAME COLOUR
+A Footer with Constant form
+Remove Dead Spaces 
+Merlin Avana post landscape Div add except No. Of Towers
+BU Area- 861-1047Sq FT 
+Possession Sept'26
+Remove Const. Status from nav bar
+Sparsh has 2 master plans - PArking and roof
+7 floorplans
+
+#Primrose:-
+Feel Of Happiness -> Remove from Landscape
+landscape carousel
+Specification transition remove
+Sub HEading Remove
+KEEP AMENITIES CIRCLE SAME COLOUR
+remove 4th image of project images
+A Footer with Constant form
+Sparsh has 2 master plans - PArking and roof
+3 floor plans
