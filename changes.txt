@@ -36,5 +36,5 @@ Sub HEading Remove
 KEEP AMENITIES CIRCLE SAME COLOUR
 remove 4th image of project images
 A Footer with Constant form
-Sparsh has 2 master plans - PArking and roof
+Primrose has 2 master plans - PArking and roof
 3 floor plans
